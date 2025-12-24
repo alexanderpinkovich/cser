@@ -89,10 +89,8 @@ ENV PIP_NO_INPUT=1
 COPY scripts/comfy-manager-set-mode.sh /usr/local/bin/comfy-manager-set-mode
 RUN chmod +x /usr/local/bin/comfy-manager-set-mode
 
-# Install custom nodes
-RUN comfy node install https://github.com/ltdrdata/ComfyUI-Impact-Pack && \
-    comfy node install https://github.com/Ltamann/ComfyUI-TBG-SAM3 && \
-    comfy node install https://github.com/ClownsharkBatwing/RES4LYF
+# Install custom nodes using their CLI tool
+RUN comfy-node-install comfyui-impact-pack https://github.com/Ltamann/ComfyUI-TBG-SAM3 https://github.com/ClownsharkBatwing/RES4LYF
 
 # Set the default command to run when starting the container
 CMD ["/start.sh"]
