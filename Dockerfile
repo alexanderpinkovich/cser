@@ -1,4 +1,4 @@
-# Custom ComfyUI worker for inpainting
+# Custom ComfyUI worker for inpainting v2
 # Build argument for base image selection
 ARG BASE_IMAGE=nvidia/cuda:12.6.3-cudnn-runtime-ubuntu24.04
 
