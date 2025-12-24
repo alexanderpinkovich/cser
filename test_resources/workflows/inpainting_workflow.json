@@ -1,7 +1,7 @@
 {
   "4": {
     "inputs": {
-      "ckpt_name": "fg_real1.1.safetensors"
+      "ckpt_name": "fgr11.safetensors"
     },
     "class_type": "CheckpointLoaderSimple",
     "_meta": {
